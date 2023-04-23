@@ -116,12 +116,12 @@ body{
   }
   .about-col-1{
     flex-basis: 50%;
-
   } 
   .about-col-2{
     flex-basis: 50%;
     font-weight: 600;
     font-size: 25px;
+    margin-top: 30px
   } 
   .row{
     display: flex;
@@ -137,16 +137,24 @@ body{
     display: flex;
   }
   #skills{
-  margin: auto;
-  width: 80%;
-  padding: 10px;
+   margin: auto;
+   margin-bottom: 100px;
+   width: 85%;
+   height: 500px;
+   padding: 50px;
 }
+#skills h1{
+  text-align: center;
+}
+
   .tab-links{
-    margin-left: 50px;
+    padding-top: 50px;
+    margin: auto;
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
     position: relative;
+    
   }
   .tab-links::after{
     content: '';
@@ -166,10 +174,8 @@ body{
     width: 400px;
     margin-top: 50px;
     display: none;
-    
-  }
-  .tab-contants.h3{
-    margin: 10px 10px;
+    padding-right: 10px;
+
   }
  .React{
   width:100%; 
@@ -256,7 +262,12 @@ display: flex;
   }
   /*--------------services-------------------*/
   #services{
-    padding: 30px 0;
+   height: 600px;
+   margin: 80px;
+  }
+  .sub-title{
+    text-align: center;
+     margin: 50px;
   }
   .services-list{
   display: grid;
@@ -279,13 +290,8 @@ display: flex;
     padding-right: 10px;
   }
   .services-list div p{
-  
-   display: block;
-   margin-block-start: 1em;
-   margin-block-end: 1em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
-   font-weight: 600;
+   font-size: 15px;
+   font-weight: 700;
   }
   .services-list div h2{
    font-size: 20px;
@@ -300,4 +306,89 @@ display: flex;
   .services-list div:hover{
     background-color: #ff004f;
     transform: translateY(-10px);
+  }
+  /*-----------------contact--------------------*/
+  .contact{
+  margin:100px
+  }
+  .contact h1{
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+  .contact-left{
+    flex-basis: 35%;
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .contact-left p{
+   margin-top: 30px;
+  }
+  .contact-left p i{
+   margin-right: 15px;
+   color: #ff004f;
+   font-size: 25px;
+  }
+  .social-icons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgroud 0.5s;
+    padding: 14px 50px;
+  }
+  .btn:hover{
+    background: #ff004f;
+  }
+  .btn.btn2{
+    display: inline;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+  form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 0;
+    cursor: pointer;
+    background-color: #000000;
+  }
+  footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 5px;
   }
