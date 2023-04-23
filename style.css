@@ -59,3 +59,245 @@ body{
     width: 100%;
    
   }
+  .header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    width: 500px;
+    display: inline-block;
+  }
+  .header-text h1{
+    font: size 5.6em;
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 1.3;
+  }
+  
+  #about{
+    padding: 80px 50px;
+  }
+  #box{
+    
+      overflow: hidden;
+      white-space: nowrap;
+      opacity: 0;
+      font-weight: 900;
+      background:#ff0000;
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       animation: sentence1 4s steps(40,end) 1s 1 normal forwards;
+       margin-left: 150px;
+  }
+  .text{
+    margin-top: -40px;
+  }
+ 
+@keyframes sentence1
+{
+   0% {width: 0; opacity: 0;}
+   1% {opacity: 1;}
+   100% {width: 100%; opacity: 1;}
+}
+  .header-text h3{
+    font-size: 2rem;
+    font-weight: 700;
+  
+  }
+  /*--------------------------------about---------------------------------*/
+ 
+ #about{
+  margin: 50px;
+ }
+  .about-col-1 img{
+    width: 400px;
+    height: 300;    
+    border-radius: 15px
+ 
+  }
+  .about-col-1{
+    flex-basis: 50%;
+
+  } 
+  .about-col-2{
+    flex-basis: 50%;
+    font-weight: 600;
+    font-size: 25px;
+  } 
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sub-title{
+    font-size: 40px;
+    font-weight: 600;
+   /*--------------skill------------------*/
+  }
+  .tab-titles{
+    display: flex;
+  }
+  #skills{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+  .tab-links{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:#ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+  }
+  .tab-links.active-link::after{
+    width: 100%;
+  }
+  .tab-contants{
+    width: 400px;
+    margin-top: 50px;
+    display: none;
+    
+  }
+  .tab-contants.h3{
+    margin: 10px 10px;
+  }
+ .React{
+  width:100%; 
+  background-image:linear-gradient(to right,#ff0000 0px 150px, #801b1b 150px 300px);
+   height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ .JavaScripit{
+  width:100%; 
+  background-image:linear-gradient(to right,#ff0000 0px 180px, #801b1b 180px 300px);
+  height: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+  .css{
+    width:100%;
+    background-image:linear-gradient(to right,#ff0000 0px 230px, #801b1b 230px 300px);
+    height: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .html{
+   width:100%; 
+   background-image:linear-gradient(to right,#ff0000 0px 250px, #801b1b 150px 300px);
+   height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .express{
+   width:100%; 
+   background-image:linear-gradient(to right,#ff0000 0px 250px, #801b1b 150px 300px);
+   height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .nodejs{
+    width:100%;
+    background-image:linear-gradient(to right,#ff0000 0px 260px, #801b1b 150px 300px);
+   height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .mongodb{
+    width:100%; 
+    background-image:linear-gradient(to right,#ff0000 0px 230px, #801b1b 150px 300px);
+    height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .logo span{
+display: flex;
+
+  }
+  .logo span i{
+    padding-right: 10px;
+  }
+  .firebase{
+    width:100%; 
+    background-image:linear-gradient(to right,#ff0000 0px 200px, #801b1b 150px 300px);
+    height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   
+  }
+  .git{
+    width:100%; 
+    background-image:linear-gradient(to right,#ff0000 0px 300px, #801b1b 300px 300px);
+    height: 5px;
+   border: none;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .tab-contants.active-tab{
+    display: block;
+  }
+  /*--------------services-------------------*/
+  #services{
+    padding: 30px 0;
+  }
+  .services-list{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  align-items:stretch;
+  }
+  .services-list div{
+  margin-top: 20px;
+  padding: 40px;
+  background: #262626;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, tramsform 0.5s;
+  }
+  .services-list div i{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  .services-list div p{
+  
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: 600;
+  }
+  .services-list div h2{
+   font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .services-list div a{
+    color: #fff ;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+  }
