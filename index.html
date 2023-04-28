@@ -7,26 +7,34 @@
     <title>Sribin.</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7439189069.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     
     <div id="header">
-        <div class="container">
+        <div class="container" >
             <nav>
                 <h1 class="name">Sribin.</h1>
-                <ul>
-                    <li><a href="#home">Home</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark " style="color:#ffffff;" onclick="colsemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars"  style="color:#ff0000" onclick="openmenu()"></i>
             </nav>
             <div class="header-text ">
                 <h3> Hello, it's me</h3>
                 <h1>Sribin</h1>
-                <p id="box">Web devoloper.<p></p>
-                <h3 class="text">and i'm a </h3>    
+                <div class="warpper" >
+                <h3 >and i'm a</h3> 
+                <div class="words">
+                    <span class="rotating-words">Web devoloper.</span>
+                    <span class="rotating-words">UI/UX Disingner.</span>
+                </div>   
+                </div>  
             </div>
     </div>
     </div>
@@ -39,7 +47,7 @@
                 </div>
                       <div class="about-col-2" >
                         <h1 class="sub-title">About me</h1>
-                        <p style="margin-top: 40px;">Web Devoloper the extensive knowledge and experience with hand on awsome projects.Expertised in 
+                        <p>Web Devoloper the extensive knowledge and experience with hand on awsome projects.Expertised in 
                             UI UX Designing and Full Stack Web Devolopment in MERN Stack based on India.
                             I Would Love to make your Ideas real.</p>
                      </div>            
@@ -53,7 +61,7 @@
      <div>
         <h1>Skills</h1>
         <div class="tab-titles">
-            <p class="tab-links active-link"  onclick="opentab('frondend')">Frondend Devolopment</p>
+            <p class="tab-links active-link" onclick="opentab('frondend')">Frondend Devolopment</p>
             <p class="tab-links"  onclick="opentab('backend')">Backend Devolopment</p>
             <p class="tab-links"  onclick="opentab('others')">Others</p> 
         </div>
@@ -75,7 +83,7 @@
                 <i class="fa-brands fa-js" style="color: #f5d901; padding-right: 10px;"></i><hr class="JavaScripit">
                 </span>
 
-                <h3 style="margin-top: 30px;">React</h3>
+                <h3 style="margin-top: 30px;" >React</h3>
                 <span>
                 <i class="fa-brands fa-react" style="color: #0058f0; "></i><hr class="React">
                 </span>
@@ -115,6 +123,7 @@
     <!----------------services--------------------->
 <div id="services">
     <div class="containar">
+      
         <h2 class="sub-title">Services</h2>
         <div class="services-list">
             <div>
@@ -144,19 +153,19 @@
                      end-to-end framework for the developers to work in and each of these technologies play a big part in
                       the development of web applications.</p>
             </div>
-        </div>
+        
     </div>
 </div>
  <!-------------------------------contact--------------------------------->
 <div id="contact">
-<div class="containar contact">
-    <div class="row">
-        <div class="contact-left">
-            <h1>Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>  Sribin85@gmail.com</p>
-            <p><i class="fa-solid fa-square-phone"></i> 9072016196</p>
+<div class="containar-c">
+    <div class="row contact">
+        <div class="contact-left" >
+            <h1 >Contact Me</h1>
+            <p ><i class="fa-solid fa-paper-plane"></i>  Sribin85@gmail.com</p>
+            <p class="number"><i class="fa-solid fa-square-phone"></i> 9072016196</p>
             <div class="social-icons">
-                <a href="https://www.instagram.com/sribin___/"><i class="fa-brands fa-square-instagram""></i></a>
+                <a href="https://www.instagram.com/sribin___/"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://github.com/iamsribin"><i class="fa-brands fa-github" ></i></a>
                 <a href="https://www.linkedin.com/in/sribin-k-01666422a/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
@@ -173,11 +182,13 @@
     </div>
 </div>
 </div>
+<!--------------------------footer------------------------------>
 <footer>
     <div>
         <p>copyright  &#169 Sribin.in </p>
     </div>
 </footer>
+<!--------------------------script-------------------------------->
     <script>
         var tablinks = document.getElementsByClassName("tab-links")
         var tabcontants = document.getElementsByClassName("tab-contants")
@@ -190,6 +201,18 @@
             }
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+          
+        }
+        function colsemenu(){
+            sidemenu.style.right="-150px";
+          
+         
         }
     </script>
 </body>
