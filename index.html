@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <title>Sribin.in</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7439189069.js" crossorigin="anonymous"></script>
-    
+
 </head>
+
 <body>
-    
+
     <div id="header">
-        <div class="container" >
+        <div class="container">
             <nav>
                 <h1 class="name">Sribin.</h1>
                 <ul id="sidemenu">
@@ -24,216 +26,234 @@
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark " style="color:#ffffff;" onclick="colsemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"  style="color:#ff0000" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" style="color:#ff0000" onclick="openmenu()"></i>
             </nav>
             <div class="header-text ">
                 <h3> Hello, it's me</h3>
                 <h1>Sribin</h1>
-                <div class="warpper" >
-                <h3 >and i'm a</h3> 
-                <div class="words">
-                    <span class="rotating-words">Web devoloper.</span>
-                    <span class="rotating-words">UI/UX Disingner.</span>
-                </div>   
-                </div>  
+                <div class="warpper">
+                    <h3>and i'm a</h3>
+                    <div class="words">
+                        <span class="rotating-words">Web devoloper.</span>
+                        <span class="rotating-words">UI/UX Disingner.</span>
+                    </div>
+                </div>
             </div>
-    </div>
+        </div>
     </div>
     <!-------------------------------about--------------------------------->
     <div id="about">
         <div class="containar">
             <div class="row">
-                  <div class="about-col-1">
+                <div class="about-col-1">
                     <img src="images/user.png" alt="">
                 </div>
-                      <div class="about-col-2" >
-                        <h1 class="sub-title">About me</h1>
-                        <p>Web Devoloper the extensive knowledge and experience with hand on awsome projects.Expertised in 
-                            UI UX Designing and Full Stack Web Devolopment in MERN Stack based on India.
-                            I Would Love to make your Ideas real.</p>
-                     </div>            
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Web Devoloper the extensive knowledge and experience with hand on awsome projects.Expertised in
+                        UI UX Designing and Full Stack Web Devolopment in MERN Stack based on India.
+                        I Would Love to make your Ideas real.</p>
+                </div>
             </div>
-        </div>  
-      </div>
+        </div>
+    </div>
 
- <!----------------------------skills--------------------------------------->  
+    <!----------------------------skills--------------------------------------->
 
     <div id="skills">
-     <div>
-        <h1>Skills</h1>
-        <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('frondend')">Frondend Devolopment</p>
-            <p class="tab-links"  onclick="opentab('backend')">Backend Devolopment</p>
-            <p class="tab-links"  onclick="opentab('others')">Others</p> 
+        <div>
+            <h1>Skills</h1>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('frondend')">Frondend Devolopment</p>
+                <p class="tab-links" onclick="opentab('backend')">Backend Devolopment</p>
+                <p class="tab-links" onclick="opentab('others')">Others</p>
+            </div>
+            <div class="logo">
+                <div class="tab-contants active-tab" id="frondend">
+
+                    <h3> HTML</h3>
+                    <span>
+                        <i class="fa-brands fa-html5" style="color: #ff7300;"></i>
+                        <hr class="html">
+                    </span>
+
+                    <h3 style="margin-top: 30px;"> CSS</h3>
+                    <span>
+                        <i class="fa-brands fa-css3-alt" style="color: #003cff;"></i>
+                        <hr class="css">
+                    </span>
+
+                    <h3 style="margin-top: 30px;">JavaScripit</h3>
+                    <span>
+                        <i class="fa-brands fa-js" style="color: #f5d901; padding-right: 10px;"></i>
+                        <hr class="JavaScripit">
+                    </span>
+
+                    <h3 style="margin-top: 30px;">React</h3>
+                    <span>
+                        <i class="fa-brands fa-react" style="color: #0058f0; "></i>
+                        <hr class="React">
+                    </span>
+                </div>
+                <div class="tab-contants" id="backend">
+
+                    <h3>Node js</h3>
+                    <span>
+                        <i class="fa-brands fa-node" style="color: #91ab59;"></i>
+                        <hr class="nodejs">
+                    </span>
+
+                    <h3 style="margin-top: 30px;">Express</h3>
+                    <span>
+                        <i class="fa-regular fa-mountains" style="color: #000000;">u</i>
+                        <hr class="express">
+                    </span>
+                    <h3 style="margin-top: 30px;">Mongodb</h3>
+                    <span>
+                        <i class="fa-brands fa-envira fa-rotate-90" style="color: #009e3d;"></i>
+                        <hr class="mongodb">
+                    </span>
+
+                    <h3 style="margin-top: 30px;">Firebase</h3>
+                    <span>
+                        <i class="fa-regular fa-mountains" style="color: #000000;">u</i>
+                        <hr class="firebase">
+                    </span>
+                </div>
+                <div class="tab-contants" id="others">
+
+                    <h3> Git</h3>
+                    <span>
+                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                        <hr class="git">
+                    </span>
+
+                </div>
+            </div>
         </div>
-    <div class="logo">
-        <div class="tab-contants active-tab" id="frondend">
+    </div>
+    <!----------------------------------services------------------------------------>
+    <div id="services">
+        <div class="containar">
 
-                <h3> HTML</h3> 
-                <span>
-                <i class="fa-brands fa-html5" style="color: #ff7300;"></i><hr class="html">
-                </span>
+            <h2 class="sub-title">Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-palette" style="color: #fff;"></i>
+                    <h2>Web Designing</h2>
+                    <p>Creative designs attract customers most and improve the user experience which
+                        leads to an increase in website traffic. I will design an awesome and
+                        attractive website for you as personal, business, or for your services. As the design
+                        is later developed by coding the website So it will give you a clear idea of how the website
+                        looks and performs.</p>
 
-               <h3 style="margin-top: 30px;"> CSS</h3>
-               <span>
-                <i class="fa-brands fa-css3-alt" style="color: #003cff;"></i><hr class="css">
-               </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles" style="color:#fff;"></i>
+                    <h2>Static Websites</h2>
+                    <p>A static website contains Web pages with fixed content. Each page is coded in HTML and displays
+                        the same
+                        information to every visitor. Static sites are the most basic type of website and are the
+                        easiest to create.
+                        Unlike dynamic websites, they do not require any Web programming or database design. A static
+                        site can be built
+                        by simply creating a few HTML pages and publishing them to a Web server. I can make a Static and
+                        Portfolio website
+                        with Bootstrap, Semantic UI, Material UI.</p>
 
-                <h3 style="margin-top: 30px;">JavaScripit</h3>
-                <span>
-                <i class="fa-brands fa-js" style="color: #f5d901; padding-right: 10px;"></i><hr class="JavaScripit">
-                </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-invoice" style="color: #fff;"></i>
+                    <h2>MERN Stack</h2>
+                    <p>MERN Stack comprises 4 technologies namely: MongoDB, Express, React, and Node.js. It is designed
+                        to
+                        make the development process smoother and easier. Each of these 4 powerful technologies provides
+                        an
+                        end-to-end framework for the developers to work in and each of these technologies play a big
+                        part in
+                        the development of web applications.</p>
+                </div>
 
-                <h3 style="margin-top: 30px;" >React</h3>
-                <span>
-                <i class="fa-brands fa-react" style="color: #0058f0; "></i><hr class="React">
-                </span>
+            </div>
         </div>
-        <div class="tab-contants" id="backend">
-
-            <h3>Node js</h3> 
-            <span>
-            <i class="fa-brands fa-node" style="color: #91ab59;"></i>  <hr class="nodejs">
-            </span>
-
-            <h3 style="margin-top: 30px;">Express</h3>
-            <span>
-            <i class="fa-regular fa-mountains" style="color: #000000;">u</i><hr class="express">
-            </span>
-            <h3 style="margin-top: 30px;">Mongodb</h3>
-            <span>
-            <i class="fa-brands fa-envira fa-rotate-90" style="color: #009e3d;"></i> <hr class="mongodb">
-            </span>
-
-            <h3 style="margin-top: 30px;">Firebase</h3>
-            <span>  
-                <i class="fa-regular fa-mountains" style="color: #000000;">u</i> <hr class="firebase">
-            </span>
-        </div> 
-        <div class="tab-contants" id="others">
-
-            <h3> Git</h3> 
-            <span>
-            <i class="fa-brands fa-github" style="color: #ffffff;"></i><hr class="git"> 
-            </span>
-
-       </div>
-    </div>
-    </div>
-    </div>
-    <!----------------services--------------------->
-<div id="services">
-    <div class="containar">
-      
-        <h2 class="sub-title">Services</h2>
-        <div class="services-list">
+        <!-------------------------------contact--------------------------------->
+        <div id="contact">
+            <div class="containar-c">
+                <div class="row contact">
+                    <div class="contact-left">
+                        <h1>Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> Sribin85@gmail.com</p>
+                        <p class="number"><i class="fa-solid fa-square-phone"></i> 9072016196</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/sribin___/"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://github.com/iamsribin"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sribin-k-01666422a/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="" class="btn btn2">Dowload CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" style="padding-bottom: 50px;">
+                            <input type="text" name="Name" placeholder="your name" required>
+                            <input type="email" name="Email" placeholder="your email" required>
+                            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------footer------------------------------>
+        <footer>
             <div>
-                <i class="fa-sharp fa-solid fa-palette" style="color: #fff;"></i>
-                <h2>Web Designing</h2>
-                <p>Creative designs attract customers most and improve the user experience which 
-                    leads to an increase in website traffic. I will design an awesome and 
-                    attractive website for you as personal, business, or for your services. As the design 
-                    is later developed by coding the website So it will give you a clear idea of how the website looks and performs.</p>
-                 
+                <p>copyright &#169 Sribin.in </p>
             </div>
-            <div>
-                <i class="fa-solid fa-wand-magic-sparkles" style="color:#fff;"></i>
-                <h2>Static Websites</h2>
-                <p >A static website contains Web pages with fixed content. Each page is coded in HTML and displays the same 
-                    information to every visitor. Static sites are the most basic type of website and are the easiest to create.
-                     Unlike dynamic websites, they do not require any Web programming or database design. A static site can be built 
-                     by simply creating a few HTML pages and publishing them to a Web server. I can make a Static and Portfolio website 
-                     with Bootstrap, Semantic UI, Material UI.</p>
-               
-            </div>
-            <div>
-                <i class="fa-solid fa-file-invoice" style="color: #fff;"></i>
-                <h2>MERN Stack</h2>
-                <p>MERN Stack comprises 4 technologies namely: MongoDB, Express, React, and Node.js. It is designed to 
-                    make the development process smoother and easier. Each of these 4 powerful technologies provides an
-                     end-to-end framework for the developers to work in and each of these technologies play a big part in
-                      the development of web applications.</p>
-            </div>
-        
-    </div>
-</div>
- <!-------------------------------contact--------------------------------->
-<div id="contact">
-<div class="containar-c">
-    <div class="row contact">
-        <div class="contact-left" >
-            <h1 >Contact Me</h1>
-            <p ><i class="fa-solid fa-paper-plane"></i>  Sribin85@gmail.com</p>
-            <p class="number"><i class="fa-solid fa-square-phone"></i> 9072016196</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/sribin___/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://github.com/iamsribin"><i class="fa-brands fa-github" ></i></a>
-                <a href="https://www.linkedin.com/in/sribin-k-01666422a/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <a href="" class="btn btn2">Dowload CV</a>
-        </div>
-        <div class="contact-right">
-            <form name="submit-to-google-sheet" style="padding-bottom: 50px;">
-                <input type="text" name="Name" placeholder="your name" required>
-                <input type="email" name="Email" placeholder="your email" required>
-                <textarea name="Message" rows="6" placeholder="your message"></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-            <span id="msg"></span>
-        </div>
-    </div>
-</div>
-</div>
-<!--------------------------footer------------------------------>
-<footer>
-    <div>
-        <p>copyright  &#169 Sribin.in </p>
-    </div>
-</footer>
-<!--------------------------script-------------------------------->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontants = document.getElementsByClassName("tab-contants")
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
+        </footer>
+        <!--------------------------script-------------------------------->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontants = document.getElementsByClassName("tab-contants")
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link")
+                }
+                for (tabcontant of tabcontants) {
+                    tabcontant.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
             }
-            for(tabcontant of tabcontants){
-                tabcontant.classList.remove("active-tab")
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+
             }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right="0";
-          
-        }
-        function colsemenu(){
-            sidemenu.style.right="-150px";
-          
-         
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOPtcd1hXVVr-VFRHyniiqbyOaG55podqs72G3-rbtll95cKVKeMkVCKt3E9dqsyF0BQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
+            function colsemenu() {
+                sidemenu.style.right = "-150px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxOPtcd1hXVVr-VFRHyniiqbyOaG55podqs72G3-rbtll95cKVKeMkVCKt3E9dqsyF0BQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
             })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+        </script>
 </body>
+
 </html>
