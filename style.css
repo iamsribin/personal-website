@@ -111,9 +111,63 @@ nav ul li a:hover::after {
 
 @keyframes sentence1 {
   0% {
+  .warpper{
+    box-sizing: content-box;
+    display: flex;
+    height: 50px;
+  }
+  .words{
+    overflow: hidden;
+  }
+  .rotating-words{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight:750;
+    display: block;
+    height: 70px;
+    padding-left: 10px;
+    color: #ff004f;
+    animation: spin-words 5s infinite;
+  }
+  @keyframes spin-words{
+    10%{
+      transform: translateY(10%);
+    }
+    50%{
+      transform: translateY(-100%);
+    }
+  }
+  nav{
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    padding:10px;
+    background: #000000;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+   
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
     width: 0;
     opacity: 0;
   }
+  
   1% {
     opacity: 1;
   }
