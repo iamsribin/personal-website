@@ -32,7 +32,7 @@ body {
 }
 .name {
   font-size: 200%;
-  padding-left: 70px;
+  padding-left: 10px;
 }
 .warpper {
   box-sizing: content-box;
@@ -678,6 +678,12 @@ nav .fa-solid {
     margin: 0px;
     overflow-x: hidden;
   }
+  .row{
+    justify-content: center;
+  }
+  .name{
+    padding-left: 10px;
+  }
   #contact {
     margin-top: 50px;
   }
@@ -691,6 +697,7 @@ nav .fa-solid {
     background-image: url(images/576.png);
   }
   nav {
+    padding-right: 5px;
     width: 100%;
     background: #000000;
   }
@@ -702,8 +709,10 @@ nav .fa-solid {
     margin-bottom: 50px;
   }
   .about-col-1 img {
+    align-items: center;
     border-radius: 15px;
-    display: inline;
+    display:flex;
+    justify-content: center;
     flex-basis: 100%;
     width: 250px;
   }
