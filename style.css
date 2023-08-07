@@ -99,13 +99,14 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text {
+
   display: inline-block;
-  padding: 50px;
+  padding:0px;
 }
 .header-text h1 {
   font-size: 50px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 0px;
   line-height: 1.3;
 }
 
@@ -450,6 +451,10 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 /*-----------------contact--------------------*/
+.link{
+  text-decoration: none;
+  color: #fff;
+}
 .contact {
   margin-top: 50px;
 }
@@ -697,7 +702,6 @@ nav .fa-solid {
     background-image: url(images/576.png);
   }
   nav {
-    padding-right: 5px;
     width: 100%;
     background: #000000;
   }
